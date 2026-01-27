@@ -101,13 +101,16 @@
 
 @media screen and (min-width: 768px) {
     .touch {
+        .container {
+            position: relative;
+        }
 
         // &__wrapper {
         //     margin-top: 45px;
         // }
 
         &__form {
-            position: relative;
+            // position: relative;
             width: 300px;
             padding-left: 24px;
         }
