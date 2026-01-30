@@ -17,8 +17,8 @@ try {
             type: 'bullets',
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".icon-right-open",
+            prevEl: ".icon-left-open",
         },
         breakpoints: {
             // when window width is >= 1200px
@@ -28,6 +28,7 @@ try {
             },
             1920: {
                 spaceBetween: 35,
+                slidesPerView: 3,
             },
         },
 

@@ -23,6 +23,7 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 28px;
+        font-family: "Inter", sans-serif;
 
         &:nth-child(2) {
             margin-top: 8px;
@@ -68,6 +69,7 @@
         &::placeholder {
             color: $ui-disabled;
             font-size: 14px;
+            font-family: "Inter", sans-serif;
         }
     }
 
@@ -101,18 +103,10 @@
 
 @media screen and (min-width: 768px) {
     .touch {
-        .container {
-            position: relative;
-        }
-
-        // &__wrapper {
-        //     margin-top: 45px;
-        // }
-
         &__form {
-            // position: relative;
+            position: relative; // necessary?
             width: 300px;
-            padding-left: 24px;
+            margin-left: 24px; // was padding-left
         }
 
         &__decor {
