@@ -1,0 +1,25 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.blog {
+    padding-top: 50px;
+
+    &__tittle {
+        margin-top: 60px;
+    }
+
+    &__title-h3 {
+        text-align: left;
+    }
+
+    &__card {
+        border: 1px solid $dark;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+        background: $light;
+    }
+
+    &__data {
+        &-column {
+            padding: 25px 25px 0 25px;
+        }
+    }
+}
