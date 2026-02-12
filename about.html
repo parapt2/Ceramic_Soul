@@ -109,24 +109,25 @@
                                 <fieldset class="touch__fieldset">
                                     <div class="touch__input-block">
                                         <label class="touch__label" for="name">Name</label>
-                                        <input class="touch__input" type="text" id="name" name="name" placeholder="Name"
-                                            required>
+                                        <input class="touch__input" type="text" id="name" name="name" placeholder="Name" required>
                                     </div>
                                     <div class="touch__input-block">
                                         <label class="touch__label" for="email">Email</label>
-                                        <input class="touch__input" type="email" id="email" name="email"
-                                            placeholder="Email" required>
+                                        <input class="touch__input" type="email" id="email" name="email" placeholder="Email"
+                                            required>
                                     </div>
                                 </fieldset>
                                 <label class="touch__label" for="question">Yor question</label>
                                 <textarea class="touch__textarea" name="question" id="question" placeholder="Question"
                                     required></textarea>
-
+                                <div class="error-message"></div>
+            
                                 <label class="touch__label touch__check-block" for="checkbox">
                                     <input class="touch__checkbox" type="checkbox" id="checkbox" required>
                                     I agree with the <a href="#">terms</a>
                                 </label>
-
+                                <div class="checkbox-error-message"></div>
+            
                                 <button class="btn-send touch__btn">send request</button>
                             </form>
                         </div>
