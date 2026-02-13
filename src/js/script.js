@@ -74,9 +74,9 @@ try {
 // Обратите внимание, что значение block (в двух местах) можно спокойно поменять на flex, если вам это необходимо
 
 try {
-    const validator = new JustValidate('form');
+    const validatorTouch = new JustValidate('.touch__form');
 
-    validator
+    validatorTouch
         .addField('#name', [
             {
                 rule: 'required',
@@ -85,7 +85,7 @@ try {
             {
                 rule: 'minLength',
                 value: 2,
-                errorMessage: "Min 2 char!"
+                errorMessage: "Minimum 2 chars!"
             },
         ])
         .addField('#email', [
@@ -113,5 +113,32 @@ try {
             },
         ], {
             errorsContainer: document.querySelector('#checkbox').parentElement.parentElement.querySelector('.checkbox-error-message'),
+        });
+} catch (e) { }
+
+try {
+    const validatorFooter = new JustValidate('.footer__form');
+
+    validatorFooter
+        .addField('.footer__input', [
+            {
+                rule: 'required',
+            },
+            {
+                rule: 'email',
+            },
+        ],
+            {
+                errorsContainer: document
+                    .querySelector(".footer__input")
+                    .parentElement.querySelector(".email-error-message"),
+            }
+    )
+        .addField('#footer__checkbox', [
+            {
+                rule: 'required',
+            },
+        ], {
+            errorsContainer: document.querySelector('#footer__checkbox').parentElement.parentElement.querySelector('.checkbox-error-message'),
         });
 } catch (e) { }

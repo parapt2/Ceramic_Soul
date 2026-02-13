@@ -8,6 +8,10 @@
         outline: 1px solid $ui-error;
     }
 
+    #checkbox.just-validate-error-field {
+        outline: none;
+    }
+
     &__wrapper {
         margin-top: 60px;
     }
